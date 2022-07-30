@@ -35,7 +35,7 @@ local Text = Draw("Text", {
     Outline = true,
     OutlineColor = Color3.fromRGB(255, 255, 255),
     Color = Color3.fromRGB(0, 0, 0),
-    Text = "Auto Clicking [V] : FALSE\nMouse Locked [R] : FALSE",
+    Text = "Auto Click [V] : FALSE\nMouse Lock [B] : FALSE",
     Visible = true,
 })
 --Key Bind--
@@ -50,7 +50,7 @@ UIS.InputBegan:Connect(function(inputObj, GPE)
             flags.Mouse_Locked = not flags.Mouse_Locked
         end
 
-        Text.Text = ("Auto Clicking [V] : %s\nMouse Locked [R] : %s"):format(tostring(flags.Auto_Clicking):upper(), tostring(flags.Mouse_Locked):upper())
+        Text.Text = ("Auto Clicking : %s\nMouse Locked : %s"):format(tostring(flags.Auto_Clicking):upper(), tostring(flags.Mouse_Locked):upper())
     end
 end)
 --Auto Click--
