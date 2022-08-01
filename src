@@ -50,7 +50,7 @@ UIS.InputBegan:Connect(function(inputObj, GPE)
             flags.Mouse_Locked = not flags.Mouse_Locked
         end
 
-        Text.Text = ("Auto Clicking : %s\nMouse Locked : %s"):format(tostring(flags.Auto_Clicking):upper(), tostring(flags.Mouse_Locked):upper())
+        Text.Text = ("V to Click : %s\nR to Lock : %s"):format(tostring(flags.Auto_Clicking):upper(), tostring(flags.Mouse_Locked):upper())
     end
 end)
 --Auto Click--
